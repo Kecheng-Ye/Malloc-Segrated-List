@@ -1,0 +1,1311 @@
+Team Name:ateam
+Member 1 :Harry Bovik:bovik@cs.cmu.edu
+Measuring performance with gettimeofday().
+
+Results for libc malloc:
+trace  valid  util     ops      secs  Kops
+ 0       yes    0%      12  0.000000 30000
+Total           0%      12  0.000000 30000
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+-------------------
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1018,  size = 4096, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1818,  size = 2048, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Heap end address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 1984, allocated = N, prev_allocated = Y
+Block address 0xf69d2018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+ Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = Y, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = Y, prev_allocated = Y
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d1858,  size = 6080, allocated = N, prev_allocated = Y
+-------------------
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Heap end address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 2000, allocated = N, prev_allocated = Y
+Block address 0xf69d3018,  size = 0, allocated = Y, prev_allocated = N
+Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+*******************************
+ Block address 0xf69d1018,  size = 2048, allocated = N, prev_allocated = Y
+ Block address 0xf69d1818,  size = 64, allocated = N, prev_allocated = Y
+ Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+ Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+Heap end address 0xf69d4018,  size = 0, allocated = Y, prev_allocated = N
+*******************************
+next fit start on:
+Block address 0xf69d1858,  size = 4080, allocated = Y, prev_allocated = Y
+-------------------
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+find block on:
+Block address 0xf69d2848,  size = 6096, allocated = N, prev_allocated = Y
+-------------------
+
+Results for mm malloc:
+trace  valid  util     ops      secs  Kops
+ 0       yes   66%      12  0.000728    16
+Total          66%      12  0.000728    16
+
+Perf index = 40 (util) + 1 (thru) = 41/100
